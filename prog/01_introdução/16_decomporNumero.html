@@ -1,0 +1,16 @@
+<script>
+// Leia um número inteiro menor que 1000 e devolva a quantidade de centenas, 
+// dezenas e unidades do mesmo. Obs.: não utilize operações com strings.
+
+// Entrada
+const numeroMenorQue1000 = Number(prompt("Informe um número inteiro menor que 1000"))
+
+// Processamento
+const centenas = Math.floor (numeroMenorQue1000 / 100)
+const dezenas = Math.floor (numeroMenorQue1000 / 10)
+const unidades = Math.floor (numeroMenorQue1000 / 1)
+
+// Saída
+document.write(`Centenas: ${centenas} <br/> Dezenas ${dezenas} <br/> Unidades ${unidades}`)
+
+</script>

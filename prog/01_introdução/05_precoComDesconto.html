@@ -1,0 +1,15 @@
+<script>
+// Recebe um preço e sua porcentagem de desconto, e retorna o novo preço.
+
+// Entrada
+const preçoAtual = Number(prompt("Preço do produto: R$"))
+const porcentualDesconto = Number(prompt("Percentual Desconto [0-100] "))
+
+// Processamento
+const valorDesconto = preçoAtual * (porcentualDesconto / 100)
+const preçoNovo  = preçoAtual - valorDesconto
+
+// Saída 
+document.write(`Preço Final: R$ ${preçoNovo}`)
+
+</script>
