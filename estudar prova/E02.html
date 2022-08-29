@@ -1,0 +1,20 @@
+<script>
+    //Problema: Ao usuário logar em uma aplicação, ele deverá informar se é Administrador (A), Gerente (G) ou Usuário Comum (U).
+    //Usando OPERADOR TERNÁRIO, apresente a seguinte mensagem:
+    //Se Administrador: Bom dia, Senhor!
+    //Se Gerente: Bom dia, Chefe!
+    //Se Usuário Comum: Bom dia!
+
+    //ENTRADA
+const cargo = prompt("Administrador = A, Gerente = G ou Usuário Comum = U") .toUpperCase()
+let resultado;
+
+    //PROCESSAMENTO
+(cargo === "A") ? resultado = "Bom dia, Senhor!"
+: (cargo === "G") ? resultado = "Bom dia, Chefe!"
+: resultado = "Bom dia";
+
+    //SAÍDA
+document.write(resultado);
+
+</script>
