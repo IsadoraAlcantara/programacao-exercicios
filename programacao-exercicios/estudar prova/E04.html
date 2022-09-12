@@ -1,0 +1,20 @@
+<script>
+    //Problema: Quando o aluno entrar no IFC, ele deverá informar o Curso que está matriculado.
+    //Usando OPERADOR TERNÁRIO, apresente a seguinte mensagem:
+    //Se Técnico em Informática (I): Bloco B!
+    //Se Técnico em Química (Q): Bloco D!
+    //Se Técnico em Agropecuária (A): Bloco E!
+
+    //ENTRADA
+const curso = prompt("Informe o seu curso. Informática = I; Química = Q; Agropecuária = A.") .toUpperCase()
+let resultado;
+
+    //PROCESSAMENTO
+(curso === "I") ? resultado = "Bloco B!"
+: (curso === "Q") ? resultado = "Bloco D!"
+: resultado = "Bloco E!";
+
+    //SAÍDA
+document.write(resultado)
+
+</script>

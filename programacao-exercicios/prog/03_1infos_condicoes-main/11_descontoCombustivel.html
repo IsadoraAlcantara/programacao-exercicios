@@ -1,0 +1,49 @@
+<script>
+      /*
+      //PROBLEMA
+      Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+      Álcool:
+      - até 20 litros, desconto de 3% por litro
+      - acima de 20 litros, desconto de 5% por litro
+
+      Gasolina:
+      - até 20 litros, desconto de 4% por litro
+      - acima de 20 litros, desconto de 6% por litro
+
+      Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 6,50 o preço do litro do álcool é R$ 6,10.
+      */
+
+      //ENTRADA
+  const alcool = Number(prompt("Informe quantos litros de álcool foi vendido "))
+  const gasolina = Number(prompt("Informe quantos litros de gasolina foi vendio"))
+
+      //PROCESSAMENTO
+  const valorGasolina = gasolina * 6.5
+  const valorAlcool = alcool * 6.1
+
+   if (alcool <= 20 ) {
+     const alcoolComDesconto = valorAlcool - (valorAlcool * 0.3)
+
+     if (gasolina <= 20) {
+      const gasolinaComDesconto = valorGasolina - (valorGasolina * 0.4)
+     }
+     document.write(`Gasolina valor com desconto: ${gasolinaComDesconto} \n
+     Gasolina valor sem desconto: ${valorGasolina} \n
+     Álcool valor com desconto: ${alcoolComDesconto} \n
+     Álcool valor sem desconto: ${valorAlcool}`)
+  }
+
+  else {
+    const alcoolComDesconto = valorAlcool - (valorAlcool * 0.4)
+
+     if (gasolina > 20) {
+      const gasolinaComDesconto = valorGasolina - (valorGasolina * 0.5)
+     }
+     document.write(`Gasolina valor com desconto: ${gasolinaComDesconto} \n
+     Gasolina valor sem desconto: ${valorGasolina} \n
+     Álcool valor com desconto: ${alcoolComDesconto} \n
+     Álcool valor sem desconto: ${valorAlcool}`)
+  }
+
+      //SAÍDA
+</script>

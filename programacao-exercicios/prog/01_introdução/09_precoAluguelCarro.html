@@ -1,0 +1,16 @@
+<script> 
+// Recebe a quantidade de dias que o carro foi alugado e a quantidade de quilômetros rodados,
+// e retorna o valor a ser pago. 1 dia: 60 reais mais R$ 0,15 por km rodado.
+
+// Entrada
+const diasAlugado = Number(prompt("dias que o carro foi alugado"))
+const quilômetrosRodados = Number(prompt("quilômetros rodados"))
+
+// Processamento
+const diasValor = diasAlugado * 60
+const quilômetrosValor = quilômetrosRodados * 0.15
+const preçoFinalAluguel = diasValor + quilômetrosValor
+
+// Saída 
+document.write(`Preço do aluguel: R$ ${preçoFinalAluguel}`)
+</script>

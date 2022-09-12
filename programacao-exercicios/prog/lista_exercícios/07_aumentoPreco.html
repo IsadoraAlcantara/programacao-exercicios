@@ -1,0 +1,31 @@
+<script>
+    // Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
+    //    - até 280 (inclusive): aumento de 20%
+    //    - até 700 (inclusive): aumento de 15%
+    //    - até 1500 (inclusive): aumento de 10%
+    //    - acima de 1500: aumento de 5%
+    // Informe: o preço atual, o percentual de aumento, o valor do aumento e o novo preço, todos com duas casas decimais.
+
+    // Entrada
+    const produto = Number(prompt("O valor do produto"))
+    let aumento
+    let resultado
+
+    // Processamento
+    if (produto <= 280) {
+        aumento = produto * (20 / 100)
+    } 
+    else if (produto <= 700) {
+        aumento = produto * (15 / 100)
+    } 
+    else if (produto <= 1500) {
+        aumento = produto * (10 / 100)
+    }
+    else {
+        aumento = produto * (5 / 100)
+    }
+    
+    resultado = aumento + produto
+    document.write(`preço atual: R$:${produto} </br> valor de aumento ${aumento} </br> preço novo ${resultado}`)
+
+</script>

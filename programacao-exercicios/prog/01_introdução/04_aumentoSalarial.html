@@ -1,0 +1,15 @@
+<script>
+// Recebe um salário e sua porcentagem de aumento, 
+// e retorna o novo salário
+
+// Entrada
+const salarioAtual = Number(prompt("Salário atual: R$"))
+const percentualAumento = Number(prompt("Porcentual Aumento [0-100]:"))
+
+// Processamento 
+const valorAumento = salarioAtual * (percentualAumento / 100)
+const salarioNovo = salarioAtual + valorAumento
+
+//Saída
+document.write(`Salário Atualizado R$ ${salarioNovo}`)
+</script>

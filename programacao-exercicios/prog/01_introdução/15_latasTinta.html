@@ -1,0 +1,14 @@
+<script>
+// Recebe quantos metros quadrados precisa pintar, e retorna a quantidade de latas de tinta para comprar.
+// A cobertura da tinta é de 3 metros por litro de tinta. Cada lata possui 18 litros de tinta.
+
+// Entrada
+const metrosQuadradosPintar = Number(prompt("Metros quadrados precisa pintar"))
+
+// Processamento
+const latasDeTinta = Math.round (metrosQuadradosPintar / 54) 
+
+// Saída
+document.write(`Latas de tinta para comprar: ${latasDeTinta}`)
+
+</script>

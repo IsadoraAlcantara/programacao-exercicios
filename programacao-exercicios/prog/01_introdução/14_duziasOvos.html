@@ -1,0 +1,13 @@
+<script>
+// Receba o número de ovos e devolva a quantidade de dúzias correspondente. Considere sempre dúzias cheias,
+// arredondando pra cima se necessário.
+
+// Entrada
+const quantosOvos = parseInt(prompt("Infrome a quantidade de ovos"))
+
+// Processamento 
+const quantasDuzias = Math.round (quantosOvos / 12) // ou Math.ceil
+
+// Saída
+document.write(`Duzias: ${quantasDuzias}`)
+</script>
