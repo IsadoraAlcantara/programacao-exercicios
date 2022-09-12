@@ -12,14 +12,14 @@ const fruta1 = prompt("Informe uma fruta:");
 const fruta2 = prompt("Informe uma fruta");
 const fruta3 = prompt("Informe uma fruta");
 const bebida1 = prompt("Informe uma bebida");
-const bebida2= prompt("Informe uma bebida");
+const bebida2 = prompt("Informe uma bebida");
 const bebida3 = prompt("Informe uma bebida");
 
     //PROCESSAMENTO
-const listaFrutas = fruta1 + fruta2 + fruta3;
-const listaBebidas = bebida1 + bebida2 + bebida3;
+const listaFrutas = [fruta1, fruta2, fruta3];
+const listaBebidas = [bebida1, bebida2, bebida3];
 const listaCompleta = listaFrutas.concat(listaBebidas);
 
     //SAÍDA
-document.write(`As frutas a serem compradas são: ${listaFrutas} </br> As bebidas a serem compradas são: ${listaBebidas} </br> A lista completa é: ${listaCompleta}`)
+document.write(`As frutas a serem compradas são: ${listaFrutas.join(" - ")} </br> As bebidas a serem compradas são: ${listaBebidas.join(" - ")} </br> A lista completa é: ${listaCompleta.join("- ")}`)
 </script>
