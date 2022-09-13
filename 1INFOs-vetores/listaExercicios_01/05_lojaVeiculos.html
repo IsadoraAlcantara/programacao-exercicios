@@ -17,17 +17,16 @@ const tipo = prompt("Informe o tipo de veículo que deseja inserir, se é SUV, S
 let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
 let carrosHatch = ["308", "Focus", "i30"];
-let resultado;
 
 if (tipo === "SUV") {
-    let resultado = carrosSUV.push(carroNovo);
+    carrosSUV.push(carroNovo);
 }
-else if (tipo === "SUV") {
-    let resultado = carrosSedan.push(carroNovo);
+else if (tipo === "Sedan") {
+    carrosSedan.push(carroNovo);
 }
 else {
-    let resultado = carrosHatch.push(carroNovo);
+    carrosHatch.push(carroNovo);
 }
     //SAÍDA
-document.write(resultado);
+document.write(`Lista SUV: ${carrosSUV.join(", ")}; </br> Lista Sedan ${carrosSedan.join(", ")} </br>; Lista Hatch ${carrosHatch.join(", ")}`);
 </script>
