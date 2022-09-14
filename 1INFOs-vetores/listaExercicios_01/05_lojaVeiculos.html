@@ -15,7 +15,7 @@ const tipo = prompt("Informe o tipo de veículo que deseja inserir, se é SUV, S
 
     //PROCESSAMENTO
 let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
 let carrosHatch = ["308", "Focus", "i30"];
 
 if (tipo === "SUV") {
@@ -28,5 +28,5 @@ else {
     carrosHatch.push(carroNovo);
 }
     //SAÍDA
-document.write(`Lista SUV: ${carrosSUV.join(", ")}; </br> Lista Sedan ${carrosSedan.join(", ")} </br>; Lista Hatch ${carrosHatch.join(", ")}`);
+document.write(`Lista SUV: ${carrosSUV.join(", ")} </br> Lista Sedan ${carrosSedan.join(", ")} </br> Lista Hatch ${carrosHatch.join(", ")}`);
 </script>

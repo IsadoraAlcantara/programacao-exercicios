@@ -10,8 +10,14 @@ const palavra = prompt("Informe uma palavra");
 const letra = prompt("Informe a letra que deseja procurar");
 
     //PROCESSAMENTO
+let existe = palavra.indexOf(letra)
 
-
+if (existe == true ){
+    alert(`A letra ${letra} está na posição `)
+}
+else {
+    alert(`A letra ${letra} não existe nesta palavra`)
+}
     //SAÍDA
 
 </script>

@@ -6,15 +6,18 @@
     //ENTRADA
 const numero1 = Number(prompt("Informe um número"));
 const numero2 = Number(prompt("Informe um número"));
-let resultado = 0;
 
     //PROCESSAMENTO
+let comparação = []
+
 if (numero1 > numero2) {
-    let resultado = numero1; numero2;
+    comparação.push(numero2);
+    comparação.push(numero1);
 }
 else {
-    let resultado = numero2; numero1;
+    comparação.push(numero1);
+    comparação.push(numero2);
 }
     //SAÍDA
-    document.write(resultado.join(" - "));
+    document.write(comparação.join(" - "));
 </script>

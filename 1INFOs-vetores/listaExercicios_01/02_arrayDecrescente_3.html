@@ -5,30 +5,45 @@
 
     //ENTRADA
 
-const numero1 = Number(prompt("Informe um número"));
-const numero2 = Number(prompt("Informe um número"));
-const numero3 = Number(prompt("Informe um número"));
-let resultado;
+let numero1 = Number(prompt("Informe um número"));
+let numero2 = Number(prompt("Informe um número"));
+let numero3 = Number(prompt("Informe um número"));
 
     //PROCESSAMENTO
-let comparação = [numero1, numero2, numero3];
+let comparação = [];
 
-if (numero1 < numero2 && numero1 < numero3) {
-    if (numero2 > numero3) {
-        let resultado = numero1; numero2; numero3;
+if (numero1 > numero2 > numero3) {
+    comparação.push(numero1);
+    comparação.push(numero2);
+    comparação.push(numero3);
     }
-}
-else if (numero1 < numero2 && numero1 < numero3) {
-    if (numero3 > numero2) {
-        let resultado = numero1; numero2; numero3;
+else if (numero1 > numero2 < numero3) {
+    comparação.push(numero1);
+    comparação.push(numero3);
+    comparação.push(numero2);
     }
-}
-else if (numero2 < numero1 && numero2 < numero3) {
-    if (numero1 < numero3) {
-        let resultado = numero2; numero1; numero3;
+else if (numero2 > numero1 > numero3) {
+    comparação.push(numero2);
+    comparação.push(numero1);
+    comparação.push(numero3);
     }
-}
+else if (numero2 > numero3 > numero1) {
+    comparação.push(numero2);
+    comparação.push(numero3);
+    comparação.push(numero1);
+    }
+else if (numero3 > numero1 > numero2) {
+    comparação.push(numero3);
+    comparação.push(numero1);
+    comparação.push(numero2);
+    }
+else {
+    comparação.push(numero3);
+    comparação.push(numero2);
+    comparação.push(numero1);
+    }
+
     //SAÍDA
-    document.write(resultado);
+    document.write(comparação.join(" - "));
 
 </script>
