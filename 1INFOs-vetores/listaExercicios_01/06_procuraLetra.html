@@ -6,18 +6,19 @@
     //Apresente para o usuário se a LETRA que ele quer procurar existe ou não na palavra digitada e qual a primeira posição da LETRA na PALAVRA.
 
     //ENTRADA
-const palavra = prompt("Informe uma palavra");
-const letra = prompt("Informe a letra que deseja procurar");
+const palavra = prompt("Informe uma palavra").trim();
+const letra = prompt("Informe a letra que deseja procurar").trim();
 
     //PROCESSAMENTO
-let existe = palavra.indexOf(letra)
+const posicao = palavra.indexOf(letra);
 
-if (existe == true ){
-    alert(`A letra ${letra} está na posição `)
+if (posicao >= 0){
+    alert(`A letra digitada foi encontrada na posicao ${posicao + 1}`);
 }
 else {
-    alert(`A letra ${letra} não existe nesta palavra`)
+    alert(`A letra ${letra} não existe `);
 }
+
     //SAÍDA
 
 </script>
