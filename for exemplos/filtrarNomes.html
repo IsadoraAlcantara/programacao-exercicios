@@ -1,0 +1,24 @@
+<script>
+    let llistaDeNomes = ["Alberto", "Maria", "Rafael", "Eloisa", "João", "Amanda", "Eduardo"]
+
+    let listaNomesA = [];
+    let listaOutrosNomes = [];
+
+    for (nome of llistaDeNomes) {
+        if (nome.charAt(0) === "A") {
+            listaNomesA.push(nome);
+        }
+        else {
+            listaOutrosNomes.push(nome);
+        }
+    }
+    listaNomesA.sort();
+    listaOutrosNomes.sort();
+    
+    alert(listaNomesA.join(", "));
+    alert(listaOutrosNomes.join(", "));
+
+
+
+    
+</script>

@@ -1,0 +1,12 @@
+<script>
+    let listaNumeros = [1, 2, 3, 4, 5 ,6, 7, 8, 9];
+    const pedido = parseInt(prompt("Informe um número"))
+    
+    let resultado = 0;
+    
+    for (let numero of listaNumeros) {
+        resultado = pedido * numero;
+        document.write(`${pedido} x ${numero} = ${resultado}</br>`);
+    }
+
+</script>
