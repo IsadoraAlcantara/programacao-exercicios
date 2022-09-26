@@ -1,0 +1,11 @@
+<meta charset="utf-8" />
+<script>
+    let quantidadeNomes = parseInt(prompt("Informe a quantidades de nomes que deseja adicionar"));
+
+    let listaDeNomes = [];
+
+    for (let contador = 1; contador <= quantidadeNomes; contador++) {
+        listaDeNomes.push(prompt(`Nomes: `));
+    }
+    document.write(listaDeNomes.join(", "));
+</script>
