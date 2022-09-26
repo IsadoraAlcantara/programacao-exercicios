@@ -1,5 +1,10 @@
 <meta charset="utf-8" />
 <script>
 let fatorial = Number(prompt(`Informe o número que deseja fatorar`));
+let resultado = 1
 
+for (let index = 1; index < fatorial + 1; index++) {
+    resultado = resultado * index;   
+}
+alert(resultado);
 </script>
