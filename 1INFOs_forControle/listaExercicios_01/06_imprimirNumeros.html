@@ -6,10 +6,27 @@
     */
 
     //ENTRADA
+const inicial = Number(prompt("Informe o número inicial"));
+const final = Number(prompt("Informe o número inicial"));
 
+let listaImpares = []
+let listaPares = []
 
     //PROCESSAMENTO
-
+    if (inicial >= final) {
+    document.write(`Erro. O número inicial tem q ser menor que o número final`);
+}
+else {
+    for (let contador = inicial; contador < final; contador++) {
+        if (numero % 2 == 1) {
+        listaImpares.push(numero);
+    }
+    else {
+        listaPares.push(numero);
+    }
+    }
+    document.write(listaImpares.log(", ") <br> listaImpares.log(", "));
+    }
 
     //SAÍDA
 
