@@ -7,38 +7,13 @@
     */
 
     //ENTRADA
-    const numero1 = Number(prompt("Informe um número"));
-    const numero2 = Number(prompt("Informe um número"));
-    const numero3 = Number(prompt("Informe um número"));
-    const numero4 = Number(prompt("Informe um número"));
-    const numero5 = Number(prompt("Informe um número"));
+const listaNumeros = [];
 
-const listaNumeros = [numero1, numero2, numero3, numero4, numero5];
-const numeroMaior = [];
-
-// (numero1 > numero2 > numero3 > numero4 > numero5) 
-// (numero1 >= numero)
-
-
-    //PROCESSAMENTO
-    for (numero of listaNumeros){
-        if (numero1 > numero2 && numero3 && numero4 && numero5) {
-            numeroMaior.push(numero1);
-        }
-        else if (numero2 > numero1 && numero3 && numero4 && numero5) {
-            numeroMaior.push(numero2);
-        }
-        else if (numero3 > numero2 && numero1 && numero4 && numero5) {
-            numeroMaior.push(numero3);
-        }
-        else if (numero4 > numero2 && numero3 && numero1 && numero5) {
-            numeroMaior.push(numero4);
-        }       
-         else {
-            numeroMaior.push(numero5);
-        }
-    }
+    //PROCESSAMENTO]
+for (let controle = 0; controle <= 5; controle++) {
+    listaNumeros.push(Number(prompt("Informe um número")))
+}
 
     //SAÍDA
-    document.write(numeroMaior);
+    document.write(`Lista: ${listaNumeros.join(", ")} <br> Maior número: ${listaNumeros.reverse((a, b) => a - b).join(", ")[0]}`);
 </script>
