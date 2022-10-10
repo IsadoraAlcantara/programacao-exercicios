@@ -7,14 +7,18 @@
 
     //ENTRADA
 const habitantes = 50000
-const listaResultado = []
+let resultado = habitantes;
 
     //PROCESSAMENTO
-for (let anos = 0; anos < 5; anos++) {
-    const aumentoPorAno = habitantes * (1.5 / 100);
-    listaResultado.push(aumentoPorAno)
+for (let anos = 1; anos <= 10; anos++) {
+    resultado = resultado * 1.015;
+    if (anos == 5) {
+        document.write(`Em 5 anos a população será de: ${Math.floor(resultado)} <br>`); 
+    }
+    if(anos == 10) {
+        document.write(`Em 10 anos a população será de: ${Math.floor(resultado)}`);
+    }
 }
 
     //SAÍDA
-document.write(`Em 5 anos a população será de: ${listaResultado}`);
 </script>

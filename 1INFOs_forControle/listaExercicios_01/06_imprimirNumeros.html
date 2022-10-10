@@ -17,15 +17,15 @@ let listaPares = []
     document.write(`Erro. O número inicial tem q ser menor que o número final`);
 }
 else {
-    for (let contador = inicial; contador < final; contador++) {
-        if (numero % 2 == 1) {
-        listaImpares.push(numero);
+    for (let contador = inicial; contador <= final; contador++) {
+        if (contador % 2 == 1) {
+        listaImpares.push(contador);
     }
     else {
-        listaPares.push(numero);
+        listaPares.push(contador);
     }
     }
-    document.write(listaImpares.join(", ") <br> listaImpares.join(", "));
+    document.write(`Lista pares: ${listaPares.join(", ")} <br> Lista ímpares: ${listaImpares.join(", ")}`);
     }
 
     //SAÍDA
