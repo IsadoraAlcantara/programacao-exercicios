@@ -8,11 +8,31 @@
     */
 
     //ENTRADA
-
+const aluno1 = prompt("Informe o nome do aluno");
+const aluno2 = prompt("Informe o nome do aluno");
+const aluno3 = prompt("Informe o nome do aluno");
+const votos = parseInt(prompt("Informe a quantidade de alunos votantes"));
+let aluno1Voto = 0
+let aluno2Voto = 0
+let aluno3Voto = 0
 
     //PROCESSAMENTO
-
+for (let controle = 0; controle < votos; controle++) {
+    const alunoVoto = parseInt(prompt(`Se você votou no ${aluno1} digite 1. Se você votou no${aluno2} digite 2. Se você votou no${aluno3} digite 3.`));
+    for (let controle = 0; controle < 1; controle++) {
+    if (alunoVoto == 1) {
+        aluno1Voto++
+    }
+    else if (alunoVoto == 2) {
+        aluno2Voto++
+    }
+    else (
+        aluno3Voto++
+    )
+}
+    
+}
 
     //SAÍDA
-
+document.write(`Quantidade votos ${aluno1}: ${aluno1Voto} <br> Quantidade votos ${aluno2}: ${aluno2Voto} <br> Quantidade votos ${aluno3}: ${aluno3Voto} <br>`)
 </script>
