@@ -6,13 +6,15 @@
     */
 
     //ENTRADA
-let habitantes = 80000
+let habitantesAtual = 80000;
+let habitantesFinal = 200000;
+let taxa = 1.03
 
     //PROCESSAMENTO
-for (let anos = 0; habitantes <= 200000; anos++) {
-    habitantes = habitantes + habitantes * 0.03
+for (var anos = 0; habitantesAtual <= habitantesFinal; anos++) {
+    habitantesAtual = habitantesAtual * taxa;
 }
 
     //SAÍDA
-document.write(anos);
+document.write(`Serão necessários ${anos} para chegar em 200000 habitantes`);
 </script>
