@@ -6,15 +6,15 @@
     */
 
     //ENTRADA
-let listaImpares = []
+let imparesLista = []
 
     //PROCESSAMENTO
-    for (let console = 0; console < 50; console++) {
-    if (console % 2 == 1) {
-        listaImpares.push(console);
+for (let contador = 0; contador <= 50; contador++) {
+    if (contador % 2 == 1) {
+        imparesLista.push(contador);
     }
 }
 
     //SAÍDA
-document.write(listaImpares.join(", "));
+document.write(`Números ímpares: ${imparesLista}`);
 </script>

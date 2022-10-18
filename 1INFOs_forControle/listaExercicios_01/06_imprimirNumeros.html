@@ -6,28 +6,27 @@
     */
 
     //ENTRADA
-const inicial = Number(prompt("Informe o número inicial"));
-const final = Number(prompt("Informe o número inicial"));
-
-let listaImpares = []
-let listaPares = []
+const numeroInicial = Number(prompt("Informe o número inicial"));
+const numeroFinal = Number(prompt("Informe o número final"));
 
     //PROCESSAMENTO
-    if (inicial >= final) {
-    document.write(`Erro. O número inicial tem q ser menor que o número final`);
+let pares = [];
+let impares = [];
+
+if (numeroInicial >= numeroFinal) {
+    document.write(`Erro! O número inicial é maior ou igual que o número final`);
 }
 else {
-    for (let contador = inicial; contador <= final; contador++) {
-        if (contador % 2 == 1) {
-        listaImpares.push(contador);
+    for (let contador = numeroInicial; contador < numeroFinal; contador++) {
+        if (contador % 2 == 0) {
+            pares.push(contador);
+        }
+        else {
+            impares.push(contador);
+        }
     }
-    else {
-        listaPares.push(contador);
-    }
-    }
-    document.write(`Lista pares: ${listaPares.join(", ")} <br> Lista ímpares: ${listaImpares.join(", ")}`);
-    }
-
+}
     //SAÍDA
+document.write(`Números pares: ${pares} <br> Números ímpares: ${impares}`);
 
 </script>
