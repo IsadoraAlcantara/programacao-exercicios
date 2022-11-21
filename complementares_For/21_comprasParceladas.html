@@ -1,0 +1,36 @@
+<script>
+    //PROBLEMA terminada
+    /*
+    Considere que uma loja utiliza o identificador V para transações à vista e P para transações parceladas.
+    Faça um programa que receba os valores de 10 transações realizadas, separando em listas as transações parceladas e transações à vista.
+    Apresente, ao fim do programa, os seguintes dados:
+    - Total de compras à vista
+    - Total de compras parceladas
+    - Total das compras efetuadas
+    - O valor da primeira prestação das compras a prazo, considerando que serão pagas em três vezes.
+    */
+
+    //ENTRADA
+let listaP = [];
+let listaV = [];
+let prazoValorPrestaçao = 0;
+let listaPrazoValorPrestaçao = [];
+
+    //PROCESSAMENTO
+for (let contador = 0; contador < 10; contador++) {
+    let transaçao = Number(prompt("Informe o valor da transação"));
+    let separaçao = prompt(`Informe se a transação de R$:${transaçao} é à vista = V ou parcelada = P`).toUpperCase();
+    if (separaçao === "V") {
+        listaV.push(transaçao);
+    }
+    else {
+        listaP.push(transaçao);
+    }
+    prazoValorPrestaçao = transaçao / 3;
+    listaPrazoValorPrestaçao.push(prazoValorPrestaçao);
+}
+
+    
+    //SAÍDA
+document.write(`Total de compras à vista: ${listaV.length} <br> Total de compras parceladas: ${listaP.length} <br> Valor da primeira parcela: R$:${listaPrazoValorPrestaçao.join(", ")}`);
+</script>

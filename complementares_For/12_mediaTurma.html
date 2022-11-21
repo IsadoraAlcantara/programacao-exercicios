@@ -1,0 +1,29 @@
+<script>
+    //PROBLEMA terminada
+    /*
+    Considere a seguinte lista de médias dos alunos de uma turma
+    let notasProgramacaoI = [4, 3, 5, 10, 9, 2, 7, 10, 8, 7, 6, 1, 5, 2, 3];
+    Apresente a maior média e apresente também a menor média.
+    Calcule também a média das notas da turma.
+    */
+
+    //ENTRADA
+let notasProgramacaoI = [4, 3, 5, 10, 9, 2, 7, 10, 8, 7, 6, 1, 5, 2, 3];
+let maiorNota = 0;
+let menorNota = 0;
+let mediaDaTurma = 0;
+let soma = 0;
+
+
+    //PROCESSAMENTO
+for (notas of notasProgramacaoI) {
+    soma = soma + notas;
+    mediaDaTurma = soma / notasProgramacaoI.length;
+}
+    maiorNota = Math.max.apply(null, notasProgramacaoI); // maior
+    menorNota = Math.min.apply(null, notasProgramacaoI); // menor
+
+    
+    //SAÍDA
+document.write(`Maior média: ${maiorNota} <br> Menor média: ${menorNota} <br> Média das notas da turma: ${mediaDaTurma.toFixed(2)}`);
+</script>

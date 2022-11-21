@@ -1,0 +1,42 @@
+<script>
+    //PROBLEMA
+    /*
+    Desenvolva um programa que pergunte ao espectador a sua idade e a sua avaliação sobre o filme, sendo que deverá informar R para REGULAR e B para BOM.
+    Apresente os seguintes dados:
+    - A média de idade das pessoas que responderam que o filme era REGULAR
+    - A média de idade das pessoas que responderam que o filme era BOM
+    - A média de idade de todas as pessoas que assistiram ao filme
+    - O percentual de pessoas que classificou o filme como REGULAR
+    - O percentual de pessoas que classificou o filme como BOM
+    */
+
+    //ENTRADA
+let quantidadeParticipantes = parseInt(prompt("Informe a quantidade de participantes"));
+let pessoasB = [];
+let pessoasR = [];
+
+    //PROCESSAMENTO
+for (let contador = 0; contador < quantidadeParticipantes; contador++) {
+    let idade = parseInt(prompt("Informe a idade"));
+    let avaliaçao = prompt("Informe se acha o filme bom = B ou regular = R").toUpperCase();
+    if (avaliaçao === "B") {
+        pessoasB.push(idade);
+    }
+    else {
+        pessoasR.push(idade);
+    }
+}
+
+let mediaIdadeB = pessoasB / pessoasB.length;
+let mediaIdadeR = pessoasR / pessoasR.length;
+let mediaPessoasAssistiram = (pessoasB + pessoasR) / (pessoasB.length + pessoasR.length);
+let mediaClassificouB = (100 * pessoasB.length) / (pessoasB.length) + (pessoasR.length);
+let mediaClassificouR = (100 * pessoasR.length) / (pessoasB.length) + (pessoasR.length);
+    
+    //SAÍDA
+document.write(`A média de idade das pessoas que responderam que o filme era REGULAR: ${mediaIdadeR} <br>
+A média de idade das pessoas que responderam que o filme era BOM: ${mediaIdadeB} <br>
+A média de idade de todas as pessoas que assistiram ao filme: ${mediaPessoasAssistiram} <br>
+O percentual de pessoas que classificou o filme como REGULAR: ${mediaIdadeR} <br>
+O percentual de pessoas que classificou o filme como BOM: ${mediaIdadeB}`);
+</script>

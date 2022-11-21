@@ -1,0 +1,57 @@
+<script>
+    //PROBLEMA terminada
+    /*
+    Desenvolva um programa que receba a idade de 10 pessoas. Após, calcule e mostre:
+    - A quantidade de pessoas em cada faixa etária
+    - A percentagem de pessoas em cada faixa etária
+
+    Faixas etárias:
+    1ª: Até 15 anos
+    2ª: De 16 a 30 anos
+    3ª: De 31 a 45 anos
+    4ª: De 46 a 60 anos
+    5ª: Acima de 61 anos
+    */
+
+    //ENTRADA
+let quantidadeDePessoas = 10
+let idade = 0;
+let lista1 = [];
+let lista2 = [];
+let lista3 = [];
+let lista4 = [];
+let lista5 = [];  
+
+    //PROCESSAMENTO
+for (let contador = 0; contador <= quantidadeDePessoas - 1; contador++) {
+    idade = Number(prompt("Informe a idade"));
+    if (idade <= 15) {
+        lista1.push(idade);
+    }
+    else if (idade <= 30) {
+        lista2.push(idade);
+    }
+    else if (idade <= 45) {
+        lista3.push(idade);
+    }
+    else if (idade <= 60) {
+        lista4.push(idade);
+    }
+    else {
+        lista5.push(idade);
+    }
+}
+
+let p100lista1 = (100 * lista1.length) / quantidadeDePessoas;
+let p100lista2 = (100 * lista2.length) / quantidadeDePessoas;
+let p100lista3 = (100 * lista3.length) / quantidadeDePessoas;
+let p100lista4 = (100 * lista4.length) / quantidadeDePessoas;
+let p100lista5 = (100 * lista5.length) / quantidadeDePessoas;
+    
+    //SAÍDA
+    document.write(`1ª: Até 15 anos: ${lista1}; ${p100lista1}% <br>
+    2ª: De 16 a 30 anos: ${lista2.join(", ")}; ${p100lista2}% <br>
+    3ª: De 31 a 45 anos: ${lista3.join(", ")}; ${p100lista3}% <br>
+    4ª: De 46 a 60 anos: ${lista4.join(", ")}; ${p100lista4}% <br>
+    5ª: Acima de 61 anos: ${lista5.join(", ")}; ${p100lista5}%`);
+</script>
