@@ -1,5 +1,5 @@
 <script>
-    //PROBLEMA 
+    //PROBLEMA terminada
     /*
     Desenvolva um programa que receba o sexo e a idade de 10 pessoas.
     Calcule e apresente:
@@ -9,24 +9,24 @@
     */
 
     //ENTRADA
-let listaF = [];
-let listaM = [];
+let somaM = 0;
+let somaF = 0;
 let mulheresQuantidade = Number(prompt("Informe a quantidade de mulheres"));
 let homensQuantidade = Number(prompt("Informe a quantidade de homens"));
 
     //PROCESSAMENTO
-for (let contador1 = 0; contador1 < mulheresQuantidade; contador1++) {
+for (var contador1 = 0; contador1 < mulheresQuantidade; contador1++) {
     let idadeF = Number(prompt("Informe a idade das mulheres"));
-    listaF.push(idadeF);
+    somaF += idadeF;
 }
-for (let contador2 = 0; contador2 < homensQuantidade; contador2++) {
+for (var contador2 = 0; contador2 < homensQuantidade; contador2++) {
     let idadeM = Number(prompt("Informe a idade dos homens"));
-    listaM.push(idadeM);
+    somaM += idadeM
 }
 
-let mediaIdadeMulheres = listaF / listaF.length;
-let mediaIdadeHomens = listaM / listaM.length;
-let mediaIdadePessoas = (listaF + listaM) / 10
+const mediaIdadeMulheres = somaF / contador1;
+const mediaIdadeHomens = somaM / contador2;
+const mediaIdadePessoas = (somaF + somaM) / (contador1 + contador2);
     
     //SAÍDA
 document.write(`Média idade das 10 pessoas: ${mediaIdadePessoas} <br> A idade média das mulheres: ${mediaIdadeMulheres} 

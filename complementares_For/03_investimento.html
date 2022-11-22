@@ -1,5 +1,5 @@
 <script>
-    //PROBLEMA
+    //PROBLEMA terminada
     /*
     Considere que uma pessoa está investindo, no início de cada mês, uma quantia de R$ 100,00. O rendimento ao final do mês é de 1,8% (0.018).
     Calcule qual será o total que a pessoa terá investido ao final de 24 meses, ao final de 48 meses e ao final de 96 meses.
@@ -8,21 +8,21 @@
     */
 
     //ENTRADA
-let valorInicial = 100;
-let valorInvenstido24 = 0;
-let valorInvenstido48 = 0;
-let valorInvenstido96 = 0;
+let valorInvenstido24 = 100;
+let valorInvenstido48 = 100;
+let valorInvenstido96 = 100;
+let meses = 0;
 
     //PROCESSAMENTO
-for (let contador = valorInicial; contador <= 24 ; contador++) {
+for (meses = 0; meses <= 24 ; meses++) {
     valorInvenstido24 = valorInvenstido24 * 1.018;
 }
-for (let contador = 0; contador < 48 ; contador++) {
-    valorInvenstido48 = valorInvenstido48 + valorInvenstido24 * 1 + 0.018;;
+for (meses = 0; meses < 48 ; meses++) {
+    valorInvenstido48 = valorInvenstido48 * 1.018;;
     
 }
-for (let contador = 0; contador < 96 ; contador++) {
-    valorInvenstido96 = valorInvenstido96 + valorInvenstido24 * 1 + 0.018;;
+for (meses = 0; meses < 96 ; meses++) {
+    valorInvenstido96 = valorInvenstido96 * 1.018;;
     
 }
     
