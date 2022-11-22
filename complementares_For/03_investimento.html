@@ -9,13 +9,23 @@
 
     //ENTRADA
 let valorInicial = 100;
+let valorInvenstido24 = 0;
+let valorInvenstido48 = 0;
+let valorInvenstido96 = 0;
 
     //PROCESSAMENTO
-for (let contador = 0; contador < 24 ; contador++) {
-    let valorInvenstido = valorInvenstido * 1.018;
+for (let contador = valorInicial; contador <= 24 ; contador++) {
+    valorInvenstido24 = valorInvenstido24 * 1.018;
+}
+for (let contador = 0; contador < 48 ; contador++) {
+    valorInvenstido48 = valorInvenstido48 + valorInvenstido24 * 1 + 0.018;;
+    
+}
+for (let contador = 0; contador < 96 ; contador++) {
+    valorInvenstido96 = valorInvenstido96 + valorInvenstido24 * 1 + 0.018;;
     
 }
     
     //SAÍDA
-document.write(`Rendimento ao final de 24 meses: ${valorInvenstido} <br> Rendimento ao final de 48 meses <br> Rendimento ao final de 96 meses`);
+document.write(`Rendimento ao final de 24 meses: ${Math.floor(valorInvenstido24)} <br> Rendimento ao final de 48 meses: ${Math.floor(valorInvenstido48)} <br> Rendimento ao final de 96 meses: ${Math.floor(valorInvenstido96)}`);
 </script>

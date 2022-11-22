@@ -11,11 +11,29 @@
     */
 
     //ENTRADA
-
+let limiteI = Number(prompt("Informe o limite inferior"));
+let limiteS = Number(prompt("Informe o limite superior"));
+let listaPares = [];
+let listaImpares = [];
+let numero = 0;
+let soma = 0;
 
     //PROCESSAMENTO
+for (let contador = limiteI; contador < limiteS; contador++) {
+    numero = limiteI++
+    if (numero % 2 == 0) {
+        listaPares.push(numero);
+    }
+    else {
+        listaImpares.push(numero);
+    }
+}
 
+for (var i = 0; i < listaPares.length; i++) {
+    soma += listaPares[i];
+    
+}
     
     //SAÍDA
-
+document.write(`Limite inicial: ${limiteI} <br> Limite final: ${limiteS} <br> Saída: ${listaPares.join(", ")} <br> Soma: ${soma}`)
 </script>

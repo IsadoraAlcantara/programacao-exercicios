@@ -11,6 +11,8 @@
     //ENTRADA
 let quantiaDePessoas = parseInt(prompt("Informe a quantidade de pessoas que terão sua medida informada"));
 let alturaLista = [];
+let maior = [];
+let menor = [];
 let maiorAltura = 0;
 let menorAltura = 0;
 
@@ -18,8 +20,8 @@ let menorAltura = 0;
 for (let contador = 0; contador < quantiaDePessoas; contador++) {
     let altura = Number(prompt("Informe a altura:"));
     alturaLista.push(altura);
-    maiorAltura = Math.max(alturaLista);
-    menorAltura = Math.min(alturaLista);
+    maior = Math.max(maiorAltura);
+    menor = Math.min(menorAltura);
 }
     
     //SAÍDA
